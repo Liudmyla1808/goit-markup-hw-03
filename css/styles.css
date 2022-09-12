@@ -6,7 +6,7 @@
     --tres-text: #FFFFFF;
     --accent-color: #2196F3 ;
     --secondary-backgraund: #2196F3 ;
-    --dcg-color: #F5F5F5 ;
+    --dcg-color: #fff ;
     --bcg-fon: #2F303A ;
     --bcg-grey: #F5F4FA;
     
@@ -14,23 +14,14 @@
 a{
     text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p{
+p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 ul {
-    padding-left: 0;
-  }
-  
-  button {
-    padding: 0;
-    border: 0;
-  }
+margin: 0;
+padding: 0;
+}
   
   /* main img {
     display: block;
@@ -45,10 +36,6 @@ body{
 }
 ul{
     list-style: none;
-}
-.flex-conteineri {
-    display: flex;
-    align-items: center;
 }
 
 /* Header */
@@ -80,6 +67,8 @@ nav.flex-container {
     background-color: var(--tres-text);
 }
 .logo{
+    padding-top: 24px;
+    padding-bottom: 24px;
     color:var(--accent-color) ;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -97,6 +86,8 @@ nav.flex-container {
     
 }
 .part-logo{
+    padding-top: 24px;
+    padding-bottom: 24px;
     color:var(--second-text) ;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -141,6 +132,8 @@ nav.flex-container {
 
    
 .auth-nav-cont{
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--primery-text-color);
     font-family: 'Roboto';
     font-weight: 500;
@@ -159,8 +152,12 @@ nav.flex-container {
     font-family: 'Roboto';
     background-color:var(--bcg-fon) ;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .section-main{
+    max-width: 696px;
+    margin: auto;
     margin-top: 0;
     margin-bottom: 30px;
     color: var(--tres-text) ;
@@ -172,8 +169,9 @@ nav.flex-container {
 }
 /* кнопка */
 .button{
+    padding: 10px 32px;
     color: var(--tres-text) ;
-    background-color: var(--secondary-backgraund);
+    background-color: var(--accent-color)
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -184,16 +182,28 @@ nav.flex-container {
 }
 .button:hover,
 .button:focus{
-    background-color: var(--bcg-fon);
+    background-color: #188CE8;
 }
 /* Perevagu */
 .section-perevag{
     background-color:var(--dcg-color) ;
     padding-top: 0;
     margin-top: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section-perevag{
     display: flex;
+}
+.flex-conteineri {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  
+}
+.card-perevag{
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
 }
 
 /* скрыть заголовок */
@@ -212,7 +222,6 @@ nav.flex-container {
   }
 .section-tit{
     margin-bottom: 10px;
-    margin-top: 95px;
     width: 270px;
     padding-right: 30px;
     color: var(--title-text-color) ;
@@ -224,48 +233,43 @@ nav.flex-container {
 /* What are we doing& */
 .section-robota{
     background-color: var(--dcg-color);
-    padding-left: 215px;
-    padding-right: 215px;
+    padding-bottom: 94px;
     }
 .cont-robota{
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
     
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin-left: -30px;
-    margin-top: -30px;
 }
 .item-robota{
-    flex-basis: calc(100%-60px) / 3;
-    flex-basis: calc(100 / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
 }
 
 /* Comanda */
 .section-comanda{
     background-color: var(--bcg-grey) ;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .color{
     background-color: var(--dcg-color);
     display: block;
-    flex-basis: calc(100%-60px) / 3;
-    flex-basis: calc(100 / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+
 }
 .texto{
     font-weight: 500;
     font-size: 16px;
     line-height: 1,19;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .section-title{
-    margin-top: 50px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     color: var(--title-text-color);
     font-family: 'Roboto';
     font-weight: 700;
@@ -278,20 +282,15 @@ nav.flex-container {
 }
 .conteiner-comand{
     display: flex;
-    margin-top: 80px;
-    margin-bottom: 94px;
     flex-wrap: wrap;
-    padding: 0;
-    padding-bottom: 94px;
-    
-    margin: 0;
-    list-style: none;
-    margin-left: -30px;
-    margin-top: -30px;
+    margin-right: -30px;
+
 }
 
 .section-titl{
-    
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -306,6 +305,9 @@ nav.flex-container {
 /* Footer */
 .footer{
     background-color: var(--bcg-fon);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 .part-logofut{
     color: var(--tres-text);
@@ -334,6 +336,17 @@ nav.flex-container {
 .footcont:focus{
     color: var(--accent-color);
 }
+.page-footer{
+    /* background-color: var(--bcg-fon); */
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* margin-top: 94px;
+    margin-bottom: 94px; */
+}
 
 /* Портфолио */
 .sectport-title{
@@ -344,6 +357,7 @@ nav.flex-container {
 }
 
 .butt{
+    padding: 6px 22px;
     color: var(--title-text-color);
     background-color: #F5F4FA;
      font-family: 'Roboto';
@@ -366,15 +380,13 @@ nav.flex-container {
     line-height: 1.88;
 }
 .conteiner-portfolio{
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin-right: auto;
-margin-left: auto;
+margin-bottom: 94px;
+margin-top: 94px;
 }
 .conteiner-knopki{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .item-knopka{
     margin-right: 8px;
@@ -391,18 +403,13 @@ margin-left: auto;
 }
 .item-portfolio{
     
-    flex-basis: calc(100 / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
-
-.page-footer{
-    background-color: var(--bcg-fon);
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 94px;
-    margin-bottom: 94px;
+.conteiner-border{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
+
