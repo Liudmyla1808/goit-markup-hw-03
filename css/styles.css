@@ -59,14 +59,18 @@ ul{
     align-items: center;
    
 }
-nav.flex-container {
-    column-gap: 93px;
-  }
+
+
+.site-nav{
+    margin-left: 93px;  
+}
+
 
 .page-header{
     background-color: var(--tres-text);
 }
 .logo{
+    display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
     color:var(--accent-color) ;
@@ -75,6 +79,7 @@ nav.flex-container {
     font-size: 26px;
     line-height: 1.2;
     }
+
 .link-current{
     display: block;
     padding-top: 32px;
@@ -109,9 +114,8 @@ nav.flex-container {
 .site-nav{
     display: flex;
 }
-.site-nav li{
-    margin-left: 50px;
-    
+.site-nav li:not(:first-child){
+    margin-left: 50px; 
 }
 
 
@@ -126,14 +130,14 @@ nav.flex-container {
     padding: 0;
     margin-left: auto;
 }
-.auth-nav .auth-nav-cont:last-child{
-    margin-left: 50px;
+.auth-nav .auth-nav-cont{
+    margin-right: 50px;
 }
 
-   
+
 .auth-nav-cont{
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primery-text-color);
     font-family: 'Roboto';
     font-weight: 500;
@@ -169,9 +173,10 @@ nav.flex-container {
 }
 /* кнопка */
 .button{
+    border: none;
     padding: 10px 32px;
     color: var(--tres-text) ;
-    background-color: var(--accent-color)
+    background-color: var(--accent-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -223,7 +228,7 @@ nav.flex-container {
 .section-tit{
     margin-bottom: 10px;
     width: 270px;
-    padding-right: 30px;
+    
     color: var(--title-text-color) ;
     text-transform: uppercase ;
     font-weight: 700;
@@ -255,7 +260,6 @@ nav.flex-container {
 
 .color{
     background-color: var(--dcg-color);
-    display: block;
     flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
 
@@ -290,7 +294,7 @@ nav.flex-container {
 .section-titl{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -336,7 +340,7 @@ nav.flex-container {
 .footcont:focus{
     color: var(--accent-color);
 }
-.page-footer{
+/* .page-footer{
     /* background-color: var(--bcg-fon); */
     width: 1200px;
     padding-left: 15px;
@@ -346,7 +350,7 @@ nav.flex-container {
     
     /* margin-top: 94px;
     margin-bottom: 94px; */
-}
+} */
 
 /* Портфолио */
 .sectport-title{
@@ -357,6 +361,7 @@ nav.flex-container {
 }
 
 .butt{
+    border: none;
     padding: 6px 22px;
     color: var(--title-text-color);
     background-color: #F5F4FA;
@@ -387,16 +392,14 @@ margin-top: 94px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 8px;
 }
-.item-knopka{
+/* .item-knopka{
     margin-right: 8px;
-}
+} */
 .cart-set{
     display: flex;
     flex-wrap: wrap;
-    
-    padding: 0;
-    margin: 0;
     list-style: none;
     margin-left: -30px;
     margin-top: -30px;
@@ -413,3 +416,17 @@ margin-top: 94px;
     border-top: none;
 }
 
+.logo-footer{
+    padding: 0;
+    margin-bottom: 20px; 
+    display:inline-block;
+    
+    color:var(--accent-color) ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.item-footer:not(:last-child){
+    margin-bottom: 20px;
+}
