@@ -23,10 +23,10 @@ margin: 0;
 padding: 0;
 }
   
-  /* main img {
+ img {
     display: block;
-    width: 100%;
-  } */
+    max-width: 100%;}
+
 body{
     color: var(--primery-text-color) ;
     background-color: var(--tres-text);
@@ -91,8 +91,7 @@ ul{
     
 }
 .part-logo{
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     color:var(--second-text) ;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -114,11 +113,9 @@ ul{
 .site-nav{
     display: flex;
 }
-.site-nav li:not(:first-child){
+ .site-nav li:not(:first-child){
     margin-left: 50px; 
-}
-
-
+} 
 
 .site-nav .link:hover, 
 .site-nav .link:focus{
@@ -130,12 +127,13 @@ ul{
     padding: 0;
     margin-left: auto;
 }
-.auth-nav .auth-nav-cont{
+.otstup:not(:last-child){
     margin-right: 50px;
 }
 
 
 .auth-nav-cont{
+   
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primery-text-color);
@@ -174,6 +172,7 @@ ul{
 /* кнопка */
 .button{
     border: none;
+    border-radius: 4px;
     padding: 10px 32px;
     color: var(--tres-text) ;
     background-color: var(--accent-color);
@@ -190,6 +189,9 @@ ul{
     background-color: #188CE8;
 }
 /* Perevagu */
+.paragraf-perevag{
+    line-height: 1.7;
+}
 .section-perevag{
     background-color:var(--dcg-color) ;
     padding-top: 0;
@@ -206,10 +208,12 @@ ul{
     margin-right: -30px;
   
 }
-.card-perevag{
-    flex-basis: calc(100% / 4 - 30px);
+.card-perevag:not(:last-child) {
+    
     margin-right: 30px;
 }
+.card-perevag{
+flex-basis: calc(100% / 4 - 30px);}
 
 /* скрыть заголовок */
 .visually-hidden {
@@ -300,12 +304,12 @@ ul{
     font-size: 16px;
     line-height: 1.19;
 }
-.cont-robota{
+/* .cont-robota{
     
 }
 .item-robota{
     
-}
+} */
 /* Footer */
 .footer{
     background-color: var(--bcg-fon);
@@ -340,17 +344,7 @@ ul{
 .footcont:focus{
     color: var(--accent-color);
 }
-/* .page-footer{
-    /* background-color: var(--bcg-fon); */
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
     
-    /* margin-top: 94px;
-    margin-bottom: 94px; */
-} */
 
 /* Портфолио */
 .sectport-title{
@@ -358,6 +352,7 @@ ul{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-bottom: 4px;
 }
 
 .butt{
@@ -394,9 +389,9 @@ margin-top: 94px;
     margin-bottom: 50px;
     gap: 8px;
 }
-/* .item-knopka{
-    margin-right: 8px;
-} */
+a{
+    color: #212121;
+}
 .cart-set{
     display: flex;
     flex-wrap: wrap;
@@ -428,5 +423,6 @@ margin-top: 94px;
     line-height: 1.2;
 }
 .item-footer:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 9px;
 }
+
